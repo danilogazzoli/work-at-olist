@@ -40,7 +40,8 @@ DJANGO_APPS = [
 ]
 
 LOCAL_APPS = [
-   "my_api"
+   "my_api",
+   "library"
 ]
 
 EXTERNAL_APPS = [
