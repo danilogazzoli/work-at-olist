@@ -25,7 +25,7 @@ SECRET_KEY = 'l)@t2x^#kq8p7qwcjqwy#&dhbu#1=q*67w0uf+&g8puk403$r='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost:8000']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -130,3 +130,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+REST_FRAMEWORK = {
+    "DEFAULT_FILTER_BACKENDS": [
+        "rest_framework.filters.SearchFilter",
+    ]
+}
