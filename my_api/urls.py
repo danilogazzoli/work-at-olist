@@ -16,10 +16,11 @@ Including another URLconf
 from rest_framework import routers
 from django.contrib import admin
 from django.urls import path
-from library.api import AuthorViewSet
+from library.api import AuthorViewSet, BookViewSet
 
 routes = routers.DefaultRouter()
-routes.register(r'v1/author', AuthorViewSet, basename="authors")
+routes.register(r'v1/authors', AuthorViewSet, basename="authors")
+routes.register(r'v1/books', BookViewSet, basename='books')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

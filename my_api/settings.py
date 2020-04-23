@@ -45,7 +45,8 @@ LOCAL_APPS = [
 ]
 
 EXTERNAL_APPS = [
-    "rest_framework"
+    "rest_framework",
+    "django_filters"
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + EXTERNAL_APPS
