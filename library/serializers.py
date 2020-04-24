@@ -13,10 +13,21 @@ class AuthorSerializer(serializers.ModelSerializer):
 
 class BookListSerializer(serializers.ModelSerializer):
     """
-    Serializer class for many to many
+    Serializer class for many to many.
+    This serializer was used for showing the Authors properly, only for GET
     """
     authors = AuthorSerializer(many=True)
-
     class Meta:
         model = Book
         fields = "__all__"
+
+
+class BookSerializer(serializers.ModelSerializer):
+   """
+   this serializer is used for POST, PATCH and DELETE
+   """
+   class Meta:
+        model = Book
+        fields = "__all__"
+
+
