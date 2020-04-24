@@ -35,9 +35,9 @@ $ pip install -r requirements.txt
 
 ### .env settings file
 
-It's necessary to create a .env file at the root directory with the following entry:
+It's necessary to create a .env file at the root directory with the following entry:	
 ```sh
-SECRET_KEY=AnyValueYouWant
+SECRET_KEY=AnythingYouWant
 ```
 
 ### Migrate the database
